@@ -1,0 +1,73 @@
+.headerCard {
+    background-image: linear-gradient(to right, rgb(13, 14, 13), rgb(25, 88, 27));
+    height: 7rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+.headerTitle {
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    align-items: center;
+    border: 1px solid black;
+    height: 30rem;
+    width: 35rem;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    background-color: hsl(from rgb(209, 127, 38) h s l);
+    box-shadow: 10px 10px black;
+    
+}
+
+.card .cardImage {
+    margin-top: 2rem;
+    height:15rem;
+    width: 25rem;
+    border: 1px solid black;
+    border-radius: 5rem;
+}
+
+.card .cardTitle {
+    margin-top: 0px;
+}
+
+.card .cardText {
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(0, 0, 0);
+}
+
+.background {
+    background-image: linear-gradient(to right, rgb(13, 14, 13), rgb(25, 88, 27));
+}
+
+.loginCard {
+    align-items: center;
+    border: 1px solid black;
+    height: 30rem;
+    width: 35rem;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    background-color: hsl(from rgb(209, 127, 38) h s l);
+    box-shadow: 10px 10px black;
+}
+
+.layout {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
