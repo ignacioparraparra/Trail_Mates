@@ -1,22 +1,7 @@
 require('dotenv').config();
 const bcrypt = require('bcrypt');
 const router = require('express').Router();
-let User = require('../models/user.model');
-const jwt = require('jsonwebtoken')
-const saltRounds = 10;
-
-const trips = [
-    {   
-        username: 'Pope',
-        location: 'Zyon',
-        title: 'Trip 1'
-    },
-    {
-        username: 'Ignacio',
-        location: 'Yosemite',
-        title: 'Trip 2'
-    }
-]
+const User = require('../models/user.model');
 
 let refreshTokens = []
 

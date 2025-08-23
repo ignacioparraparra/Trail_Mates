@@ -1,0 +1,163 @@
+* {font-family:Arial, Helvetica, sans-serif;}
+
+ body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+
+.whole {
+    background-color: #FEFAE0;
+  
+}
+
+.headerbox {
+    align-items: center;
+    color: #606c38;
+}
+
+header {
+    height: 15vh;
+}
+
+
+.headerparent {
+    display: flex;
+    flex-wrap: wrap;
+    height:15vh;
+}
+
+.headerchild {
+    flex-grow:1;
+    flex-basis:auto;
+    padding: 1rem;
+}
+
+.headerchild h1 {
+   text-align: right;
+   color:#606c38;
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+.headerparent .headerchild .compname {
+    color:#606c38;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.parent {
+    background-color: #FEFAE0;
+    display: flex;
+    flex-wrap: wrap;
+    height:auto;
+    padding: 2rem 2rem;
+
+}
+
+.flex-item-left {
+    flex:50%;
+    width:100%;
+    height:100%;
+}
+
+.flex-item-right {
+    flex:50%;
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+
+
+.parent .flex-item-left .herotext {
+    font-size: 5rem;
+    margin:0;
+    color: #606c38;
+
+}
+
+p {
+    padding:0;
+    margin:0;
+}
+
+.parent .flex-item-left .herosubtext {
+    font-size: 2rem;
+    padding: 0;
+    margin:0;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    color: #606c38;
+    
+}
+
+.logo {
+    width:3rem;
+    height: auto;
+}
+
+.heroImage {
+    width: 70% !important;
+    margin-bottom: 1rem;
+}
+
+.footy {
+    height:23.3vh;
+    background-color: #606c38;
+    color: white;
+    justify-content: left;
+    align-items: left;
+
+}
+
+.footer-container {
+    padding: 1rem 1rem;
+    width: 50%;
+    height: 50%;
+}
+
+.footer-flex-item {
+    width: 50%;
+    height: 50%;
+    text-align: left;
+    display: flex;
+}
+
+.footer-flex-item a {
+    margin-right: 1rem;
+}
+
+.footer-flex-item a:hover {
+    background-color: #BC6c25;
+    border-radius: 40%;
+}
+
+@media (max-width: 900px) {
+    .parent {
+        padding-top: 0;
+    }
+
+    .flex-item-left, .flex-item-right {
+        flex:100%;
+    }
+
+    .parent .flex-item-left .herotext {
+    font-size: 4rem;
+    margin:0;
+    color: #606c38;
+}
+
+    .flex-item-right, .flex-item-left {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .heroImage {
+        padding:0;
+        padding-top: 1rem;
+        width: 100% !important;
+        text-align: left;
+    }
+}

@@ -1,12 +1,21 @@
-import { StrictMode } from 'react'
-// Imports the function to create a root for rendering
-import { createRoot } from 'react-dom/client'
-// react router, makes it easier
-import TrailMates from './TrailMates.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import TrailMates from "./TrailMates.jsx";
+import { Auth0Provider } from "@auth0/auth0-react";
+import { BrowserRouter } from "react-router-dom";
 
-// Creates react root inside HTML to render react components 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <TrailMates />
-  </StrictMode>
-)
+    <Auth0Provider
+      domain={import.meta.env.VITE_AUTH0_DOMAIN}
+      clientId={import.meta.env.VITE_AUTH0_CLIENT_ID}
+      authorizationParams={{ 
+        redirect_uri: 'http://localhost:5173/dashboard',
+        audience: import.meta.env.AUDIENCE }}
+    >
+      <BrowserRouter>
+      <TrailMates />
+      </BrowserRouter>
+      </Auth0Provider>
+      </StrictMode>,
+);

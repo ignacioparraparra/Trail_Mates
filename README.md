@@ -12,3 +12,10 @@
 # Updates
 ## TrailMates v0.1 - Landing Page Build 08/13/25
 ### Trying to achieve nice landing page and some sort of user authentication
+
+
+            <Sidebar/>
+            <LogoutButton/>
+            <h1>Welcome {user.name}</h1>
+            <Test />
+            <TripCreate/>

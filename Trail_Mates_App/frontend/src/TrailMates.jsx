@@ -1,22 +1,19 @@
-// react router, makes it easier
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import SignUp from './components/sign-up.component.jsx'
-import Login from './components/login.component.jsx'
+import { Routes, Route, Link } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
 import Dashboard from './components/dashboard.component.jsx';
+import Home from './components/home.component.jsx';
+//import LoginButton from './components/login.component.jsx';
+//import LogoutButton from './components/logout-component.jsx';
 
-// Creates react root inside HTML to render react components 
-function TrailMates() {
-    return(
+export default function TrailMates() {
+  const { isAuthenticated, isLoading, error} = useAuth0();
 
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<SignUp />}></Route>
-                <Route path='/register' element={<SignUp/>}></Route>
-                <Route path='/login' element={<Login/>}></Route>
-                <Route path='/dashboard' element={<Dashboard/>}></Route>
-            </Routes>
-        </BrowserRouter>
-
-    );
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </>
+  );
 }
-export default TrailMates
