@@ -9,8 +9,8 @@ require('dotenv').config();
 // exist and be verified against the Auth0 JSON Web Key Set.
 
 const checkJwt = auth({
-      audience: 'https://trailmates/api',
-      issuerBaseURL: 'https://dev-jym70awba1f4mbhj.us.auth0.com/',
+      audience: process.env.AUDIENCE,
+      issuerBaseURL: process.env.ISSUER_BASE_URL,
 });
 
 
