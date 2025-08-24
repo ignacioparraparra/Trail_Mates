@@ -2,7 +2,7 @@
 ### Turn your camping trip or dream getaway with your besties from group chat fantasy to real-life adventure!
 
 # Goal
-* Create web app with user authentication, which then allows users the ability for real time messaging and collaberation with friends they invite to their planner.
+* Create web app with user authentication, which then allows users the ability for real time messaging and collaboration with friends they invite to their planner.
 
 # Key Focuses
 * Picking and configuring a database
