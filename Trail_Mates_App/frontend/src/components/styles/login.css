@@ -1,0 +1,41 @@
+.loginitems {
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 50%;
+    width: 20%;
+    border-radius: 3%;
+}
+
+
+.logincard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width:100vw;
+    background: rgb(54, 56, 59);
+    height: 100vh;
+}
+
+@media (max-width:600px) {
+    .loginitems {
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 40%;
+    width: 80%;
+    border-radius: 3%;
+    text-align: center;
+}
+    button {
+        width: 80%;
+    }
+
+    input {
+        width: 78%;
+    }
+}

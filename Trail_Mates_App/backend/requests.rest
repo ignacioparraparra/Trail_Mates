@@ -1,0 +1,36 @@
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "username": "Pope",
+    "password": "Pope123"
+}
+
+###
+
+GET http://localhost:3000/users/trips
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IklnbmFjaW8iLCJpYXQiOjE3NTU3MjUxOTcsImV4cCI6MTc1NTcyNTIxMn0.aP0MD-vzMr7J0rbnRsUjsIweAe0s-azp1SEHfke_AKk
+
+### 
+
+POST http://localhost:3000/users/token
+
+content-Type: application/json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IklnbmFjaW8iLCJpYXQiOjE3NTU3MjQ3Mjl9.XjGPfdWzoVChbNt-b4ILVzTpdgITSbrib4E1exroudU" 
+}
+
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "username": "Ignacio",
+    "password": "123pass"
+}
+
+
+
+###
+GET http://localhost:3000/users/trips
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IklnbmFjaW8iLCJpYXQiOjE3NTU3MjMyODksImV4cCI6MTc1NTcyMzMwNH0.Vl1MdNfkrwupumM4jbEyEX85qpj-aJ9Z90hoinbHc_Q
